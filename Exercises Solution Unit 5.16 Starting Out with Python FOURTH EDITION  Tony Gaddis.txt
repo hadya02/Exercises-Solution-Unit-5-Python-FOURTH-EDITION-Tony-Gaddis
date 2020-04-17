@@ -1,0 +1,22 @@
+Odd/Even Counter
+In this chapter, you saw an example of how to write an algorithm that determines
+whether a number is even or odd. Write a program that generates 100 random numbers
+and keeps a count of how many of those random numbers are even, and how many of
+them are odd.
+
+import random
+
+number = []
+even = 0
+odd = 0
+
+for i in range(100):
+    num = random.randint(1,100000)
+    number.append(num)
+    if num % 2 == 0 :
+        even += 1
+    else:
+        odd += 1
+print(number)
+print(even,"is Even")
+print(odd,"is Odd")

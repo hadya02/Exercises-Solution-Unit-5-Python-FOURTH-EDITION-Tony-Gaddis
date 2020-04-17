@@ -1,0 +1,9 @@
+ Kilometer Converter
+Write a program that asks the user to enter a distance in kilometers, then converts that
+distance to miles. The conversion formula is as follows:
+Miles 5 Kilometers 3 0.6214
+
+ miles = kilometers x 0.6214
+kilometer = int(input("enter a distance in kilometers : "))
+miles = kilometer * 0.6214
+print("distance in Miles : ",miles)

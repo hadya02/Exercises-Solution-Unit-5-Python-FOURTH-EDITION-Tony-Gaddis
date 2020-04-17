@@ -1,0 +1,11 @@
+Stadium Seating
+There are three seating categories at a stadium. Class A seats cost $20, Class B seats cost
+$15, and Class C seats cost $10. Write a program that asks how many tickets for each class
+of seats were sold, then displays the amount of income generated from ticket sales.
+
+ class A cost $20, class B cost $15, and class C cost $10
+classA = int(input("how many tickets for class A is sold : "))
+classB = int(input("how many tickets for class B is sold : "))
+classC = int(input("how many tickets for class C is sold : "))
+total = (classA*20)+(classB*15)+(classC*10)
+print("the total amount is $",total)

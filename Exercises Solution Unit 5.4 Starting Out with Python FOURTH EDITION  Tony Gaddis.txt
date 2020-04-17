@@ -1,0 +1,18 @@
+ Automobile Costs
+Write a program that asks the user to enter the monthly costs for the following expenses
+incurred from operating his or her automobile: loan payment, insurance, gas, oil, tires, and
+maintenance. The program should then display the total monthly cost of these expenses,
+and the total annual cost of these expenses.
+
+loan = float (input("enter the monthly costs for the loan payment : "))
+insurance = float (input("enter the monthly costs for the insurance : "))
+gas = float (input("enter the monthly costs for the gas : "))
+oil = float (input("enter the monthly costs for the oils : "))
+tire = float (input("enter the monthly costs for the tires : "))
+maintenance = float (input("enter the monthly costs for the maintenance : "))
+
+totalmonthly = loan + insurance + gas + oil + tire + maintenance
+totalannual = totalmonthly * 12
+
+print("the total monthly cost of these expenses are : ",totalmonthly)
+print("the total annual cost of these expeses are : ",totalannual)

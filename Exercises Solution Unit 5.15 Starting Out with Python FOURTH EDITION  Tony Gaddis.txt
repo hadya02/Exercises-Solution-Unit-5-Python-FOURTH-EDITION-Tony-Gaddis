@@ -1,0 +1,50 @@
+Test Average and Grade
+Write a program that asks the user to enter five test scores. The program should display a
+letter grade for each score and the average test score. Write the following functions in the
+program:
+•	 calc_average. This function should accept five test scores as arguments and return the
+average of the scores.
+•	 determine_grade. This function should accept a test score as an argument and return
+a letter grade for the score based on the following grading scale:
+Score Letter Grade
+90–100 A
+80–89 B
+70–79 C
+60–69 D
+Below 60 F
+
+test1 = float(input("enter test 1 score : "))
+test2 = float(input("enter test 2 score : "))
+test3 = float(input("enter test 3 score : "))
+test4 = float(input("enter test 4 score : "))
+test5 = float(input("enter test 5 score : "))
+
+
+def calc_average (test1, test2, test3, test4, test5):
+    average = (test1+test2+test3+test4+test5) / 5
+    print("and the average score is ",average)
+    
+def determine_grade (test):
+    if test >= 90 and test <= 100:
+        print(test,"\t  Grade A")
+    elif test >= 80 and test <= 89:
+        print(test,"\t  Grade B")
+    elif test >= 70 and test <= 79:
+        print(test,"\t  Grade C")
+    elif test >= 60 and test <= 69:
+        print(test,"\t  Grade D")
+    elif test >=0 and test <= 59 :
+        print(test,"\t  Grade F")
+    else:
+        print("enter valid number")
+
+print("Score \t Grade")
+print("__________________")
+
+determine_grade(test1)
+determine_grade(test2)
+determine_grade(test3)
+determine_grade(test4)
+determine_grade(test5)
+
+calc_average(test1,test2,test3,test4,test5)
